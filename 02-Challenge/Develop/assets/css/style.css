@@ -1,0 +1,150 @@
+/* global selector to set element sizing to border-box (below) model */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* default syle for link and paragraph elements */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Brought up the font-size to apply to all */
+p {
+    font-size: 16px;
+}
+
+/* brought up the header element to be more logical */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* This is how we make the "seo" letters in the logo in a different color! */
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+/* because I changed the navigation to nav from div to have all elements to navigate, need to change to nav here also */
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* because I changed the navigation to nav from div to have all elements to navigate, need to change to nav here also */
+header nav ul {
+    list-style-type: none;
+}
+
+/* because I changed the navigation to nav from div to have all elements to navigate, need to change to nav here also */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/* this is the hero image. Set up so that it's aligned correctly with the navigation elements */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* we created the group "services" and this defines its parameters */
+.services {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* we have deleted all the individual styling and group them under the new service-item - see below */
+.service-item h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* because we have grouped search-engine-optimazation, online-reputation-management, and social-media-marketing into "service-item" category, we only need one setting, and deleted the other 3 */
+.service-item {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.service-item img {
+    max-height: 200px;
+}
+
+/* renamed the float-left to service-item-float-left */
+.service-item-img-float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* renamed the float-left to service-item-float-right */
+.service-item-img-float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* Here we are defining the style for the newly created "benefits" section */
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* We have deleted the list of all individual benefits (benefit-lead , benefit-brand , benefit-cost and replaced with the one "benefits-item" div instead, since they are all styled the same */
+.benefit-item {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-item h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-item img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* This styles the elements in the footer */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}

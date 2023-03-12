@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ACTIONS TAKEN : Adding the viewport to allow proper viewing on mobile screens -->
+<title>Horiseon</title>
+    <!-- ACTIONS TAKEN: Changing the title from "website" to name of Company -->
+</head>
+
+<body>
+    <header>
+         <!-- in the header we have company logo and navigation to id anchors-->
+         <!-- ACTIONS TAKEN: got rid of the div (which is generic, and non-semantic) and added comment above and below to explain what's in the code -->
+        <h1>Hori<span class="seo">seo</span>n</h1>
+         <!-- log of the company -->
+         <!--ACTIONS TAKEN : description for company logo -->
+       
+        <nav>
+            <!-- ACTIONS TAKEN: replace the div (which is generic, and non-semantic) with the nav element, which is used in headers and footers to provide navigations to other sections/websites. Devs note: in this case the ids are row 46 and 53, and they're linked thanks to the # anchor before the href) -->
+            <ul>
+                <li>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero"></div>
+
+    <main>
+     <!-- main image representing a team working together -->
+     <!-- ACTIONS TAKEN: change from div class hero (generic and non-semantic) to semantic (main) -->
+        <section>
+            <!-- ACTIONS TAKEN: because it is a background image, we can't seem to be able to leave a alt text as description, so instead adding a span role="img" with an aria label (an accessibility label for elements without a text/description) -->
+            <span role="img"
+                aria-label="image representing a team working together on some documents and their laptops"></span>
+            <!-- Dev note: the Nav elements need to overlap correctly on small screens, and the background image is in CSS-->
+        </section>
+
+        <!-- List of all services provided by Horiseon -->
+        <section class="services">
+            <!-- ACTION TAKEN : grouped service as a section class "services"-->
+            <!-- List of 3 child sections (with image, heading and a descriptions of services provided)-->
+            <div id="search-engine-optimization" class="service-item">
+                <!-- ACTIONS TAKEN: changed from div class to div id, making it an individual item-->
+                <img src="./assets/images/search-engine-optimization.jpg" 
+                 alt="notebook with coffee and open laptop"
+                 class="service-item-img-float-left"/>
+                 <!-- ACTIONS TAKEN: added alt description to image for Accessibility-->
+                <h2>Search Engine Optimization</h2>
+                <p>
+                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                </p>
+            </div>
+            <!-- Service offered : Online Reputation Management-->
+            <!-- ACTIONS TAKEN : changed the class to service-item as it's grouped under that class-->
+            <div id="online-reputation-management" class="service-item">
+                <img src="assets/images/online-reputation-management.jpg" class="service-item-img-float-right" 
+                 alt="open notebook with reputation chart"/>
+                 <!-- ACTIONS TAKEN : added alt image description-->
+                <h2>Online Reputation Management</h2>
+                <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                </p>
+            </div>
+            <!-- Service offered : Social Media Marketing-->  
+            <div id="social-media-marketing" class="service-item">
+             <img src="assets/images/social-media-marketing.jpg" class="service-item-img-float-left" 
+             alt="table full of social media related items"/>
+             <!-- ACTIONS TAKEN : changed the class to the service-iyem-img-float-left which is for all the group, and added an alt description to the image file-->
+             <h2>Social Media Marketing</h2>
+             <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+             </p>
+            </div>
+        </section>
+
+        <section class="benefits">
+         <!-- ACTIONS TAKEN : changed from section div (generic, non semanntic) to section class (semantic)-->
+         <!-- List of 3 child sections (with image, heading and a descriptions of services provided)-->
+            <div class="benefit-item">
+             <!-- Benefit : lead generation-->
+                <h3>Lead Generation</h3>
+                <img src="assets/images/lead-generation.png" 
+                alt="image of funnel funnelling money"/>
+                <!-- ACTIONS TAKEN: added alt description to image file-->
+                <p>
+                    Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+                </p>
+            </div>
+            <!-- Benefit: Brand Awarness-->
+            <div class="benefit-item">
+            <!-- ACTIONS TAKEN : changed the class to the new group "benefit-item" -->
+             <h3>Brand Awareness</h3>
+             <img src="./assets/images/brand-awareness.png" 
+             alt="lightbulb instead of a head on a suit"/>
+             <!-- ACTIONS TAKEN: added alt description to image file-->
+             <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+             </p>
+            </div>
+            <!-- Benefit: Cost Management -->
+            <div class="benefit-item">
+            <!-- ACTIONS TAKEN : changed the class from the individual one to the new group one "benefit-item"-->
+                <h3>Cost Management</h3>
+                <img src="./assets/images/cost-management.png" 
+                alt="$ coins in front and spinning cogs"/>
+                <!-- ACTIONS TAKEN: added alt description to image file-->
+                <p> 
+                    As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!--Footer below here contains copyright and company name-->
+    <footer>
+        <h2>Made with ❤️️ by Horiseon</h2>
+        <p>
+            &copy; 2019 Horiseon Social Solution Services, Inc.
+        </p>
+    </footer>
+</body>
+
+</html>
